@@ -101,6 +101,8 @@ let g:airline#extensions#whitespace#symbol = '!'
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
   endif
+
+" powerline symbols
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -116,6 +118,9 @@ let g:airline_symbols.maxlinenr = ''
 "**************************************************
 " 键位映射
 "**************************************************
+"let mapleader = ","
+
+
 " ---------- 粘贴模式快捷键 ----------
 map <F10> :set paste<CR>
 map <F11> :set nopaste<CR>
