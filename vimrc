@@ -83,6 +83,7 @@ syntax on
 set laststatus=2        " 总是显示状态行
 set number        " 显示行号
 highlight LineNr ctermfg=243 ctermbg=235        " 行号和背景颜色
+"highlight LineNr ctermfg=243 ctermbg=236        " 行号和背景颜色，浅一点搭配 gruvbox 主题
 set cursorline        " 高亮光标所在行
 "set cursorcolumn        " 高亮光标所在列
 highlight CursorLine   cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE        " 高亮行背景颜色
