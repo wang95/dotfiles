@@ -24,8 +24,9 @@ Plug 'tpope/vim-fugitive'
 
 
 " ---------- Install Color Schemes ----------
-"Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 "Plug 'liuchengxu/space-vim-dark'
+"Plug 'chriskempson/vim-tomorrow-theme'
 
 
 call plug#end()
@@ -71,9 +72,10 @@ set cindent        " C 语言缩进，比 smartindent 严格，启用时 smartin
 " ---------- Color Schemes ----------
 "colorscheme molokai
 
-"colorscheme gruvbox
-"set background=dark
+colorscheme gruvbox
+set background=dark
 
+"colorscheme Tomorrow-Night
 "colorscheme space-vim-dark
 " ------------------------------
 
@@ -82,16 +84,19 @@ set t_Co=256
 syntax on
 set laststatus=2        " 总是显示状态行
 set number        " 显示行号
-highlight LineNr ctermfg=243 ctermbg=235        " 行号和背景颜色
-"highlight LineNr ctermfg=243 ctermbg=236        " 行号和背景颜色，浅一点搭配 gruvbox 主题
+"highlight LineNr ctermfg=243 ctermbg=235        " 行号和背景颜色
+highlight LineNr ctermfg=243 ctermbg=236        " 行号和背景颜色，浅一点搭配 gruvbox 主题
 set cursorline        " 高亮光标所在行
 "set cursorcolumn        " 高亮光标所在列
-highlight CursorLine   cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE        " 高亮行背景颜色
+"highlight CursorLine   cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE        " 高亮行背景颜色
 "highlight CursorColumn cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE        " 高亮列背景颜色
 
 
 " ---------- vim-airline ----------
+let g:airline_theme='dark'
 "let g:airline_theme='powerlineish'
+"let g:airline_theme='distinguished'
+
 let g:airline_powerline_fonts = 1
 
 " 打开 tabline 功能，方便查看Buffer和切换
