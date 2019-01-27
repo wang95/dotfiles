@@ -143,7 +143,7 @@ nnoremap <Leader>q :q<CR>
 " Quickly save the current file
 nnoremap <Leader>w :w<CR>
 
-" fzf.vim
+" ---------- fzf.vim ----------
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>l :Lines<CR>
