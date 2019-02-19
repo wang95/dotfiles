@@ -8,6 +8,7 @@ alias mv='mv -i'
 alias lla='ls -al'
 alias tmuxn='tmux new -s'
 alias tmuxks='tmux kill-session -t'
+alias pping='prettyping'
 
 
 # Source global definitions
