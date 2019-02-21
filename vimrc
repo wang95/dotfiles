@@ -21,6 +21,8 @@ Plug 'scrooloose/nerdtree'
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 
 " ---------- Install Color Schemes ----------
