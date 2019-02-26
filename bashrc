@@ -36,6 +36,9 @@ fi
 # 黄色 + 蓝色路径
 export PS1="\[\e[33m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[33m\]\h\[\e[m\] \[\e[34m\]\W\[\e[m\]\[\e[33m\]]\[\e[m\]\[\e[33m\]\\$\[\e[m\] "
 
+# 黄色 + 蓝色路径 + 绿色 git
+#export PS1="\[\e[33m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[33m\]\h\[\e[m\] \[\e[34m\]\w\[\e[m\]\[\e[32m\]\$(__git_ps1 ' (%s)')\[\e[m\]\[\e[33m\]]\[\e[m\]\[\e[33m\]\\$\[\e[m\] "
+
 
 # Set default editor
 export EDITOR=vim
