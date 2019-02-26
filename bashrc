@@ -37,4 +37,14 @@ fi
 export PS1="\[\e[33m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[33m\]\h\[\e[m\] \[\e[34m\]\W\[\e[m\]\[\e[33m\]]\[\e[m\]\[\e[33m\]\\$\[\e[m\] "
 
 
+# Set default editor
+export EDITOR=vim
+
+
+# cheat config
+export CHEAT_USER_DIR='~/.mycheat'
+export CHEAT_COLORS=true
+export CHEAT_COLORSCHEME=dark
+
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
