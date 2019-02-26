@@ -1,10 +1,6 @@
 "**************************************************
-" 快速编辑 .vimrc
+" auto reload .vimrc
 "**************************************************
-" Fast reloading of the .vimrc
-map <Leader>ss :source ~/.vimrc<CR>
-" Fast editing of .vimrc
-map <Leader>ee :e ~/.vimrc<CR>
 " When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
@@ -143,7 +139,7 @@ let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''        "默认为 ☰
+let g:airline_symbols.linenr = ''        " 默认为 ☰
 let g:airline_symbols.maxlinenr = ''
 " ------------------------------
 
@@ -152,8 +148,13 @@ let g:airline_symbols.maxlinenr = ''
 "**************************************************
 " 键位映射
 "**************************************************
-"let mapleader = ","
+let mapleader = ','        " 必须放在最前，因为此行后的 Leader 才是自定义的
 
+" ---------- 快速编辑 .vimrc ----------
+" Fast reloading of the .vimrc
+map <Leader>ss :source ~/.vimrc<CR>
+" Fast editing of .vimrc
+map <Leader>ee :e ~/.vimrc<CR>
 
 " ---------- 粘贴模式快捷键 ----------
 map <F10> :set paste<CR>
