@@ -148,7 +148,7 @@ let g:airline_symbols.maxlinenr = ''
 "**************************************************
 " 键位映射
 "**************************************************
-let mapleader = ','        " 必须放在最前，因为此行后的 Leader 才是自定义的
+let mapleader = ","        " 注意，此行后的 Leader 才是自定义的
 
 " ---------- 快速编辑 .vimrc ----------
 " Fast reloading of the .vimrc
