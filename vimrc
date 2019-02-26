@@ -22,6 +22,7 @@ Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'godlygeek/tabular'
+Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
 
 
@@ -29,6 +30,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'morhetz/gruvbox'
 "Plug 'liuchengxu/space-vim-dark'
 "Plug 'chriskempson/vim-tomorrow-theme'
+"Plug 'joshdick/onedark.vim'
 
 
 call plug#end()
@@ -72,13 +74,13 @@ set cindent        " C 语言缩进，比 smartindent 严格，启用时 smartin
 " 外观设置
 "**************************************************
 " ---------- Color Schemes ----------
-"colorscheme molokai
-
 colorscheme gruvbox
-set background=dark
-
+"colorscheme molokai
+"colorscheme onedark
 "colorscheme Tomorrow-Night
 "colorscheme space-vim-dark
+
+set background=dark
 " ------------------------------
 
 
