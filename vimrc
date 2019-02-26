@@ -77,13 +77,13 @@ set cindent           " C 语言缩进，比 smartindent 严格，启用时 smar
 " ----------------------------------------
 " Color Schemes
 " ----------------------------------------
+set background=dark
+
 colorscheme gruvbox
 "colorscheme molokai
 "colorscheme space-vim-dark
 "colorscheme Tomorrow-Night
 "colorscheme onedark
-
-set background=dark
 " ----------------------------------------
 
 set t_Co=256
