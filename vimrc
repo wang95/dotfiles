@@ -1,7 +1,7 @@
 " ==================================================
 " .vimrc of Brian {{{
 " ==================================================
-" When .vimrc is edited, reload it
+" Auto reload .vimrc upon save
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
 
@@ -29,6 +29,7 @@ Plug 'morhetz/gruvbox'
 "Plug 'liuchengxu/space-vim-dark'
 "Plug 'chriskempson/vim-tomorrow-theme'
 "Plug 'joshdick/onedark.vim'
+"Plug 'w0ng/vim-hybrid'
 " ----------------------------------------
 
 call plug#end()
@@ -84,6 +85,7 @@ colorscheme gruvbox
 "colorscheme space-vim-dark
 "colorscheme Tomorrow-Night
 "colorscheme onedark
+"colorscheme hybrid
 " ----------------------------------------
 
 set t_Co=256
@@ -100,12 +102,12 @@ set cursorline                                " 高亮光标所在行
 " ----------------------------------------
 " vim-airline
 " ----------------------------------------
-" airline Theme
+" airline theme
 let g:airline_theme='dark'
 "let g:airline_theme='powerlineish'
 "let g:airline_theme='distinguished'
 
-" Use Powerline Fonts
+" Use Powerline fonts
 let g:airline_powerline_fonts = 1
 
 " 打开 tabline 功能，方便查看Buffer和切换
@@ -121,7 +123,7 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
   endif
 
-" Unicode Symbols
+" Unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
@@ -141,7 +143,7 @@ let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.notexists = 'Ɇ'
 let g:airline_symbols.whitespace = 'Ξ'
 
-" Powerline Symbols
+" Powerline symbols
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -168,11 +170,11 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 
 " ----------------------------------------
-" Fast Editing of .vimrc
+" Quickly Edit .vimrc
 " ----------------------------------------
-" Fast reloading of the .vimrc
+" Quickly reload .vimrc
 map <Leader>ss :source ~/.vimrc<CR>
-" Fast editing of .vimrc
+" Quickly open .vimrc
 map <Leader>ee :e ~/.vimrc<CR>
 
 " ----------------------------------------
