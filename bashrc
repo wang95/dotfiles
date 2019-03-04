@@ -44,11 +44,11 @@ alias pping='prettyping'
 # Prompt
 # --------------------------------------------------
 # Completion support for core Git
-# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+# See: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 #source ~/.git-completion.bash
 
 # Git prompt support, Show repository status in prompt
-# https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+# See: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 #source ~/.git-prompt.sh
 
 # Customize prompt
