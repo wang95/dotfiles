@@ -17,13 +17,13 @@ fi
 
 # Environment variables
 # --------------------------------------------------
-# Set default editor
-export EDITOR=vim
-
 # Fix color issue
 if [ "$TERM" = "xterm" ]; then
     export TERM=xterm-256color
 fi
+
+# Set default editor
+export EDITOR=vim
 
 
 # Aliases
