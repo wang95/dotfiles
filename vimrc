@@ -39,9 +39,10 @@ call plug#end()
 " ==================================================
 " Basic Settings {{{
 " ==================================================
-set nocompatible      " 关闭 vi 兼容模式
-set mouse=n           " 仅 N 模式支持鼠标，其他模式支持 Xshell 鼠标复制
-set history=1000      " 历史记录
+set nocompatible                      " 关闭 vi 兼容模式
+set mouse=n                           " 仅 N 模式支持鼠标，其他模式支持 Xshell 鼠标复制
+set history=1000                      " 历史记录
+set backspace=indent,eol,start        " 退格键可以删除行
 
 " ----------------------------------------
 " Encoding
@@ -96,8 +97,8 @@ set number                                    " 显示行号
 highlight LineNr ctermfg=243 ctermbg=236      " 行号和背景颜色，浅一点搭配 gruvbox 主题
 set cursorline                                " 高亮光标所在行
 "set cursorcolumn                             " 高亮光标所在列
-"highlight CursorLine cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE          " 高亮行背景颜色
-"highlight CursorColumn cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE        " 高亮列背景颜色
+"highlight CursorLine cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE        " 高亮行背景颜色
+"highlight CursorColumn cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE      " 高亮列背景颜色
 
 " ----------------------------------------
 " vim-airline
@@ -159,7 +160,7 @@ let g:airline_symbols.maxlinenr = ''
 " ==================================================
 " Mappings {{{
 " ==================================================
-let mapleader = ","          " 注意，此行后的 Leader 才是自定义的
+let mapleader = ","        " 注意，此行后的 Leader 才是自定义的
 
 " ----------------------------------------
 " Basic Mappings
