@@ -39,10 +39,10 @@ call plug#end()
 " ==================================================
 " Basic Settings {{{
 " ==================================================
-set nocompatible                      " 关闭 vi 兼容模式
-set mouse=n                           " 仅 N 模式支持鼠标，其他模式支持 Xshell 鼠标复制
-set history=1000                      " 历史记录
-set backspace=indent,eol,start        " 退格键可以删除行
+set nocompatible                  " 关闭 vi 兼容模式
+set mouse=n                       " 仅 N 模式支持鼠标，其他模式支持 Xshell 鼠标复制
+set history=1000                  " 历史记录
+set backspace=indent,eol,start    " 退格键可以删除行
 
 " ----------------------------------------
 " Encoding
