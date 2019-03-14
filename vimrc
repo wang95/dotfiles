@@ -101,7 +101,7 @@ set cursorline                                " 高亮光标所在行
 "highlight CursorColumn cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE      " 高亮列背景颜色
 
 " 显示不可见符号
-set list
+"set list
 " 自定义不可见符号外观
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¬,precedes:«,extends:»
 
