@@ -48,7 +48,7 @@ set backspace=indent,eol,start    " 退格键可以删除行
 " Encoding
 " ----------------------------------------
 set encoding=utf-8
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1 
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 
 " ----------------------------------------
@@ -103,7 +103,7 @@ set cursorline                                " 高亮光标所在行
 " 显示不可见符号
 set list
 " 自定义不可见符号外观
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¬,precedes:«,extends:»
 
 " ----------------------------------------
 " vim-airline
@@ -126,7 +126,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " 自定义空格检测提示符号
 "let g:airline#extensions#whitespace#symbol = '!'
 
-" 空格检测开关
+" 空格错误检测开关
 map <F3> :AirlineToggleWhitespace<CR>
 
 " 自定义 airline 符号
