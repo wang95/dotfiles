@@ -103,7 +103,7 @@ set cursorline                                " 高亮光标所在行
 " 显示不可见符号
 "set list
 " 自定义不可见符号外观
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¬,precedes:«,extends:»
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:↵,precedes:«,extends:»
 
 " ----------------------------------------
 " vim-airline
@@ -121,12 +121,12 @@ let g:airline#extensions#tabline#enabled = 1
 " tabline 显示 buffer numbers
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" 禁用空格错误检测(行尾空格等)
+" 禁用空白符错误检测(行尾空格等)
 "let g:airline#extensions#whitespace#enabled = 0
-" 自定义空格检测提示符号
+" 自定义空白符检测提示符号
 "let g:airline#extensions#whitespace#symbol = '!'
 
-" 空格错误检测开关
+" 空白符错误检测开关
 map <F3> :AirlineToggleWhitespace<CR>
 
 " 自定义 airline 符号
