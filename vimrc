@@ -100,6 +100,11 @@ set cursorline                                " 高亮光标所在行
 "highlight CursorLine cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE        " 高亮行背景颜色
 "highlight CursorColumn cterm=NONE ctermbg=237 ctermfg=NONE guibg=NONE guifg=NONE      " 高亮列背景颜色
 
+" 显示不可见符号
+set list
+" 自定义不可见符号外观
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+
 " ----------------------------------------
 " vim-airline
 " ----------------------------------------
@@ -111,13 +116,18 @@ let g:airline_theme='dark'
 " Use Powerline fonts
 let g:airline_powerline_fonts = 1
 
-" 打开 tabline 功能，方便查看Buffer和切换
+" 打开 tabline
 let g:airline#extensions#tabline#enabled = 1
+" tabline 显示 buffer numbers
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" 隐藏 airline 右边空白符号计数
-let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#whitespace#symbol = '!'
+" 禁用空格错误检测(行尾空格等)
+"let g:airline#extensions#whitespace#enabled = 0
+" 自定义空格检测提示符号
+"let g:airline#extensions#whitespace#symbol = '!'
+
+" 空格检测开关
+map <F3> :AirlineToggleWhitespace<CR>
 
 " 自定义 airline 符号
 if !exists('g:airline_symbols')
