@@ -77,3 +77,6 @@ alias zh='z -I -t .'     # 历史路径
 export CHEAT_USER_DIR='~/.mycheat'
 export CHEAT_COLORS=true
 export CHEAT_COLORSCHEME=dark
+
+### SSL certificate
+. "/root/.acme.sh/acme.sh.env"
