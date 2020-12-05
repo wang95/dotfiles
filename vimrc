@@ -225,6 +225,11 @@ let g:NERDTreeShowLineNumbers=1
 " 窗口宽度 默认30
 "let g:NERDTreeWinSize=35
 
+" ----------------------------------------
+" plasticboy/vim-markdown
+" ----------------------------------------
+let g:vim_markdown_folding_disabled = 1
+
 
 " }}}
 " ==================================================
