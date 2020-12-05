@@ -68,15 +68,12 @@ export PS1="\[\e[33m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[33m\]
 eval "$(lua /usr/local/bin/z.lua --init bash enhanced once fzf)"
 
 alias zc='z -c'          # 严格匹配当前路径的子路径
-alias zz='z -i'          # 使用交互式选择模式
+alias zi='z -i'          # 使用交互式选择模式
 alias zf='z -I'          # 使用 fzf 对多个结果进行选择
 alias zb='z -b'          # 快速回到父目录
-alias zh='z -I -t .'     # 历史路径
-
-### cheat
-export CHEAT_USER_DIR='~/.mycheat'
-export CHEAT_COLORS=true
-export CHEAT_COLORSCHEME=dark
+alias zh='z -I -t .'     # 历史路径, fzf 交互模式
+alias zbi='z -b -i'      # 返回父目录, 交互模式
+alias zbf='z -b -I'      # 返回父目录, fzf 交互模式
 
 ### SSL certificate
 . "/root/.acme.sh/acme.sh.env"
