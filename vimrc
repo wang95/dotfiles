@@ -129,7 +129,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 "let g:airline#extensions#whitespace#symbol = '!'
 
 " 空白符错误检测开关
-map <F3> :AirlineToggleWhitespace<CR>
+map <F4> :AirlineToggleWhitespace<CR>
 
 " 自定义 airline 符号
 if !exists('g:airline_symbols')
@@ -182,6 +182,13 @@ nnoremap <Leader>q :q<CR>
 " Quickly save the current file
 nnoremap <Leader>w :w<CR>
 
+" 取消查找匹配高亮显示
+map <F3> :set nohlsearch<CR>
+
+" 显示/隐藏不可见字符
+map <F5> :set list<CR>
+map <F6> :set nolist<CR>
+
 " ----------------------------------------
 " Quickly Edit .vimrc
 " ----------------------------------------
@@ -230,6 +237,15 @@ let g:NERDTreeShowLineNumbers=1
 
 " 窗口宽度 默认30
 "let g:NERDTreeWinSize=35
+
+" ----------------------------------------
+" airblade/vim-gitgutter
+" ----------------------------------------
+" vim-gitgutter 开关
+map <F7> :GitGutterToggle<CR>
+
+" line highlighting 开关
+map <F8> :GitGutterLineHighlightsToggle<CR>
 
 " ----------------------------------------
 " Xuyuanp/nerdtree-git-plugin
