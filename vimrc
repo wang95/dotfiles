@@ -13,13 +13,15 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug '~/.fzf'                            " path to fzf directory
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'godlygeek/tabular'
 Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
+Plug 'airblade/vim-gitgutter'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " ----------------------------------------
 " Install Color Schemes
@@ -170,7 +172,7 @@ let g:airline_symbols.maxlinenr = ''
 " ==================================================
 " Mappings {{{
 " ==================================================
-let mapleader = ","        " 注意，此行后的 Leader 才是自定义的
+"let mapleader = ","        " 注意，此行后的 Leader 才是自定义的
 
 " ----------------------------------------
 " Basic Mappings
@@ -219,11 +221,31 @@ map <F2> :NERDTreeToggle<CR>
 " 当 NERDTree 为剩下的唯一窗口时自动关闭 vim
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" If more than one window and previous buffer was NERDTree, go back to it.
+autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | endif
+let g:plug_window = 'noautocmd vertical topleft new'
+
 " 显示行号
 let g:NERDTreeShowLineNumbers=1
 
 " 窗口宽度 默认30
 "let g:NERDTreeWinSize=35
+
+" ----------------------------------------
+" Xuyuanp/nerdtree-git-plugin
+" ----------------------------------------
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
 
 " ----------------------------------------
 " plasticboy/vim-markdown
