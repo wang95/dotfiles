@@ -37,6 +37,8 @@ alias cd.='cd ..'
 alias cd..='cd ..'
 alias lla='ls -al'
 alias tmuxn='tmux new -s'
+alias tmuxa='tmux a'
+alias tmuxat='tmux a -t'
 alias tmuxks='tmux kill-session -t'
 alias pping='prettyping'
 
